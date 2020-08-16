@@ -53,6 +53,8 @@
      flex-wrap: wrap;
      list-style-type: none;
  }
+ /**Botón seleccionado barra nav y botón alternativo 
+ para mediaquery en la seccion de presentación **/
  
  .contacto,
  .nuevo-boton {
@@ -70,10 +72,18 @@
      background-position: 0 100%;
  }
  /**Presentacion*/
- /**barraboton*/
  
  .saludo-cartel {
      margin-top: 50px;
+ }
+ 
+ .seccion-imagen {
+     background-color: #333533;
+     color: #8a817c;
+     display: flex;
+     font-family: 'Quantico', sans-serif;
+     font-size: 35px;
+     text-align: center;
  }
  
  h1 {
@@ -87,6 +97,7 @@
      margin-left: 10px;
      margin-top: 5px;
  }
+ /**Boton Lo que hago*/
  
  .middle {
      position: absolute;
@@ -129,18 +140,10 @@
  .btn1:hover::before {
      width: 100%;
  }
+ /**Botón alternativo para mediaquery*/
  
  .nuevo-boton {
      display: none;
- }
- 
- .seccion-imagen {
-     background-color: #333533;
-     color: #8a817c;
-     display: flex;
-     font-family: 'Quantico', sans-serif;
-     font-size: 35px;
-     text-align: center;
  }
  /**Seccion skills*/
  
@@ -148,7 +151,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     background-color: #ffffff;
+     background-color: #ede7e3;
      text-align: center;
      font-size: 17px;
      font-family: 'Roboto Mono', monospace;
@@ -307,7 +310,7 @@
      align-items: center;
      font-family: 'Quantico', sans-serif;
      padding: 50px 20px 60px;
-     background-color: #ec3883;
+     background-color: #723d46;
      color: white;
      margin-top: 5%;
  }
