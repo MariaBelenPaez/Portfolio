@@ -1,0 +1,349 @@
+                    /**generales**/
+                    
+                    html {
+                        scroll-behavior: smooth;
+                    }
+                    
+                    * {
+                        margin: 0px;
+                    }
+                    
+                    body {
+                        background-color: whitesmoke;
+                    }
+                    
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    /**Header**/
+                    
+                    header {
+                        background-color: #f0efeb;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    /**Navegador**/
+                    
+                    nav {
+                        color: grey;
+                        font-size: 25px;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        height: 80px;
+                        margin-top: 15px;
+                        box-shadow: 1px 2px 5px -3px #aaa;
+                    }
+                    
+                    ul {
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        margin-right: 150px;
+                        padding: 4%;
+                    }
+                    
+                    li a {
+                        margin-right: 20px;
+                        color: inherit;
+                        text-decoration: none;
+                    }
+                    
+                    .barra {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        list-style-type: none;
+                    }
+                    
+                    .contacto {
+                        background-color: black;
+                        color: blanchedalmond;
+                        border-radius: 100px;
+                        padding: 0 30 px;
+                        font-family: monospace;
+                        font-size: 20px;
+                        height: 50px;
+                    }
+                    
+                    .contacto:hover {
+                        background-position: 0 100%;
+                    }
+                    /**Presentacion*/
+                    /**barraboton*/
+                    
+                    .saludo-cartel {
+                        margin-top: 50px;
+                    }
+                    
+                    h1 {
+                        font-size: 50px;
+                        font-family: 'Quantico', sans-serif;
+                    }
+                    
+                    .sobre-mi {
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 25px;
+                        margin-left: 10px;
+                        margin-top: 5px;
+                    }
+                    
+                    .middle {
+                        position: absolute;
+                        top: 70%;
+                        right: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    .btn {
+                        position: relative;
+                        color: blanchedalmond;
+                        font-size: 14px;
+                        font-family: "montserrat";
+                        text-decoration: none;
+                        margin: 30px 0;
+                        margin-top: 100px;
+                        border: 2px solid black;
+                        padding: 14px 60px;
+                        text-transform: uppercase;
+                        overflow: hidden;
+                        transition: 1s all ease;
+                    }
+                    
+                    .btn::before {
+                        background: black;
+                        content: "";
+                        position: absolute;
+                        top: 40%;
+                        left: 65%;
+                        transform: translate(-50%, -50%);
+                        z-index: -1;
+                        transition: all 0.6s ease;
+                    }
+                    
+                    .btn1::before {
+                        width: 0%;
+                        height: 100%;
+                    }
+                    
+                    .btn1:hover::before {
+                        width: 100%;
+                    }
+                    
+                    .seccion-imagen {
+                        background-color: #333533;
+                        color: #8a817c;
+                        display: flex;
+                        font-family: 'Quantico', sans-serif;
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                    /**Seccion skills*/
+                    
+                    .contenedor {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: #ffffff;
+                        text-align: center;
+                        font-size: 17px;
+                        font-family: 'Roboto Mono', monospace;
+                        ;
+                        margin-top: 10%;
+                    }
+                    
+                    h2 {
+                        font-family: 'Quantico', sans-serif;
+                        font-size: 55px;
+                        padding-bottom: 0px;
+                        text-align: center;
+                    }
+                    
+                    .contenido {
+                        font-size: 30px;
+                        font-family: 'Quantico', sans-serif;
+                        padding: 40px 20px;
+                        width: 300px;
+                        margin: 10px;
+                        background-color: #e8d9d9;
+                        border: 1px solid #ccc5b9;
+                        border-radius: 15%;
+                    }
+                    
+                    .parrafo-contenido {
+                        font-size: 20px;
+                    }
+                    
+                    .cajitas {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        border-radius: 10%;
+                        margin-top: 50px;
+                        margin-right: 40px;
+                    }
+                    
+                    .contenido i {
+                        font-size: 75px;
+                        height: 50px;
+                        width: 25px;
+                    }
+                    /**Seccion frase*/
+                    
+                    .main-cita {
+                        background-color: #9d0208;
+                        margin-top: 50px;
+                        margin-bottom: 70px;
+                    }
+                    
+                    .cita {
+                        background-size: cover;
+                        background-position: center;
+                        padding-top: 100px;
+                        padding-bottom: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+                    }
+                    
+                    .contenedor-cita {
+                        background-color: #bcb8b1;
+                        padding: 2%;
+                        border-radius: 15%;
+                    }
+                    
+                    .quote {
+                        font-size: 25px;
+                        text-align: center;
+                        font-weight: 200;
+                        font-family: monospace;
+                        color: black;
+                    }
+                    
+                    .autor {
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        padding-top: 2%;
+                    }
+                    /**Botones Proyectos*/
+                    
+                    button {
+                        line-height: 2.5;
+                        margin: 0 20px 30px;
+                        margin-left: 170px;
+                        margin-top: 150px;
+                        padding: 0 30px;
+                        border: 0;
+                        background-color: transparent;
+                        font-size: 1em;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        color: #2e2e31;
+                    }
+                    
+                    .proyecto-botones-seleccionado {
+                        background-color: #b56576;
+                        border-radius: 10%;
+                    }
+                    
+                    .proyecto-botones {
+                        flex-wrap: wrap;
+                    }
+                    /**Cajas proyectos*/
+                    
+                    h3 {
+                        font-family: 'Quantico', sans-serif;
+                        font-size: 65px;
+                        padding-bottom: 0px;
+                        text-align: center;
+                    }
+                    
+                    .contenidos {
+                        font-size: 20px;
+                        font-family: 'Quantico', sans-serif;
+                        padding: 40px 50px;
+                        text-align: center;
+                        width: 550px;
+                        margin: 10px;
+                        background-color: #dedbd2;
+                        border: 1px solid #ccc5b9;
+                        border-radius: 15%;
+                        border: 1px solid rgb(196, 194, 194);
+                    }
+                    
+                    .contenidos i {
+                        font-size: 100px;
+                        height: 75px;
+                        width: 25px;
+                    }
+                    
+                    .proyecto-cuadros {
+                        margin-left: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        font-size: 350px;
+                        text-align: center;
+                        padding: 10%;
+                    }
+                    
+                    .contenidos {
+                        max-width: 200px;
+                    }
+                    /**Seccion Footer*/
+                    
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Quantico', sans-serif;
+                        padding: 80px 20px 60px;
+                        background-color: #ec3883;
+                        color: white;
+                        margin-top: 5%;
+                    }
+                    
+                    .footer-nav-menu {
+                        display: flex;
+                        margin: 0;
+                        font-family: 'Quantico', sans-serif;
+                    }
+                    
+                    .footer-nav-item {
+                        margin: 0 10px;
+                    }
+                    
+                    .footer-nav-link {
+                        display: flex;
+                        font-size: 25px;
+                        color: white;
+                    }
+                    
+                    .footer-links-redes {
+                        display: flex;
+                        font-size: 40px;
+                        list-style: none;
+                    }
+                    
+                    .footer-item-redes {
+                        font-size: 45px;
+                        display: flex;
+                        text-align: center;
+                        margin-left: 30px;
+                        padding-left: 5%;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .menu-hamburguesa {
+                        display: none;
+                    }
+                    /* Responsive */
+                    
+                    @media (max-width:450px) {
+                        .menu-hamburguesa {
+                            display: block;
+                        }
+                        li {
+                            display: none;
+                        }
+                    }
