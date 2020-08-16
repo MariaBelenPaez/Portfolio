@@ -7,7 +7,7 @@ El trabajo se puede ver [Aquí](https://belenpaezportfolio.netlify.app/)
 
 
 ## Autor
-💚*María Belén Páez
+💚María Belén Páez
 
 (https://github.com/MariaBelenPaez)
 
