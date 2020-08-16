@@ -3,7 +3,7 @@
 
 ## Tecnologias 
 🛠️ Este portfolio está realizado con HTML 5,CSS 3, Flexbox y Diseño Responsive.
-El trabajo se puede ver [Aquí](https://belenpaezportfolio.netlify.app/)
+Este proyecto se puede ver aqui:(https://belenpaezportfolio.netlify.app/)
 
 
 
@@ -11,7 +11,7 @@ El trabajo se puede ver [Aquí](https://belenpaezportfolio.netlify.app/)
 🙋‍♀️Hello, I'm Belen and this portfolio is the result of what I learned in the first study module for Front End Developers by Ada.
 # Tech
 🛠️  This portfolio was made with HTML 5,CSS 3,Flexbox and Responsive Design.
- The work is available [here]
+ This project is available here:
  (https://belenpaezportfolio.netlify.app/)
 
 
