@@ -229,9 +229,9 @@
  }
  
  .autor {
-     font-size: 20px;
+     font-size: 35px;
      font-weight: 400;
-     text-align: center;
+     text-align: end;
      padding-top: 2%;
  }
  /**Botones Proyectos*/
