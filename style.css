@@ -236,14 +236,18 @@
  button {
      line-height: 2.5;
      margin: 0 20px 30px;
-     margin-left: 170px;
-     margin-top: 150px;
      padding: 0 30px;
      border: 0;
      background-color: transparent;
      font-size: 1em;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      color: #2e2e31;
+ }
+ 
+ .proyectos-botones {
+     display: flex;
+     justify-content: center;
+     margin-top: 50px;
  }
  
  .proyecto-botones-seleccionado {
@@ -351,6 +355,9 @@
      .nuevo-boton {
          display: block;
      }
+     .seccion-imagen {
+         flex-direction: column;
+     }
  }
  
  @media (max-width:700px) {
@@ -360,10 +367,8 @@
      li {
          display: none;
      }
-     .seccion-imagen {
-         flex-direction: column;
-         justify-content: center;
-         margin-left: 40px;
+     .sobre-mi {
+         font-size: 20px;
      }
      .contenedor {
          flex-direction: column;
@@ -380,5 +385,12 @@
      }
      .footer-nav-item {
          font-size: 10px;
+     }
+     .footer-item-redes {
+         font-size: 17px;
+     }
+     .proyecto-botones {
+         margin: 0 8px 30px;
+         padding: 0 10px
      }
  }
