@@ -35,8 +35,10 @@
  }
  
  ul {
+     /* si damos ordenes de flex, debemos decir antes display: flex, sino no se aplican */
      flex-direction: row;
      justify-content: flex-start;
+     /* ojo con este margin right, te trae bastantes problemas en el responsive  */
      margin-right: 150px;
      padding: 4%;
  }
@@ -48,6 +50,7 @@
  }
  
  .barra {
+     /* este width 100% no es necesario y te trae problemas en el responsive  */
      width: 100%;
      display: flex;
      flex-wrap: wrap;
@@ -155,8 +158,12 @@
      text-align: center;
      font-size: 17px;
      font-family: 'Roboto Mono', monospace;
+     /* ojo con este ; suelto aca */
      ;
+     /* este margin top hace que tu seccion mis conocimientos quede separada de la anterior, 
+     pero con otro color de fondo. seria mejor un padding */
      margin-top: 10%;
+
  }
  
  h2 {
@@ -185,6 +192,8 @@
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
+
+     /* este es el contenedor de las tarjetas, no tiene borde, por lo que no corresponde border radius */
      border-radius: 10%;
      margin-top: 50px;
      margin-right: 40px;
@@ -204,10 +213,13 @@
  }
  
  .cita {
+     /* usamos estas dos ordenes de background cuando tenemos una imagen de fondo
+     aqui no hacen nada  */
      background-size: cover;
      background-position: center;
      padding-top: 100px;
      padding-bottom: 100px;
+     /* flex no hace nada aqui porque .cita tiene solo un descendiente. box shadow tampoco se aplica */
      display: flex;
      justify-content: center;
      align-items: center;
@@ -275,6 +287,9 @@
      font-family: 'Quantico', sans-serif;
      padding: 40px 50px;
      text-align: center;
+
+     /* aqui das width 550px pero luego en otra orden a .contenidos decis max-width 200px, por
+     lo que esto nunca se aplica */
      width: 550px;
      margin: 10px;
      background-color: #dedbd2;
@@ -294,11 +309,14 @@
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
+
+     /* este font size es enorme! se pisa en el texto de cada caja, no deberia estar aca */
      font-size: 350px;
      text-align: center;
      padding: 10%;
  }
  
+ /* esto deberia ir con .contenidos mas arriba, no suelto aca  */
  .contenidos {
      max-width: 200px;
  }

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+<!-- estas importando dos veces font awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- esta tipografia no se usa, no deberias importarla -->
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
@@ -30,6 +31,7 @@
             <!---### Barra Nav/Menu Hamburguesa###-->
             <ul class="barra">
                 <div class="menu-hamburguesa"> <i class="fas fa-bars"></i></div>
+                <!-- Estos links deberian llevar a las secciones correspondientes,identificadas por ID -->
                 <li><a href="#">Hola</a></li>
                 <li><a href="#">Conocimientos</a></li>
                 <li><a href="#">Proyectos</a></li>
@@ -41,6 +43,7 @@
 
     <!---### Comienzo presentacion###-->
     <section class="seccion-imagen">
+        <!-- este div saludo es innecesario -->
         <div class="saludo">
             <div class="saludo-cartel">
                 <p class="hola"> Hola! Soy</p>
@@ -63,9 +66,18 @@
 
 
     <!---### Comienzo Cajas conocimientos###-->
+    <!-- esto deberia ser una seccion  -->
     <div class="contenedor">
         <h2> Mis conocimientos
         </h2>
+                <!-- No se recomienda usar <br> prácticamente nunca. En este caso en particular, 
+                estamos usando <br> para estilar el contenido, violando la regla de separación 
+                de responsabilidades entre CSS y HTML. 
+                CSS debe ser el único encargado de estilar nuestra web. 
+                En este caso, por ejemplo, podríamos poner cada línea dentro de un <span> y decirle en el 
+                CSS a .descripcion: display: flex; flex-direction: column;. 
+                De esta manera nos aseguramos de que el HTML sólo de estructura, y el CSS el estilado -->
+
         <p class="descripcion"> Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Alias dignissimos repellendus
         </p>
         <!---### Cajas conocimientos###-->
@@ -103,6 +115,8 @@
     </div>
 
     <!---### Seccion Frase###-->
+
+    <!-- este div es innecesario, deberia ser una seccion -->
     <div class="main-cita">
         <section class="cita">
             <div class="contenedor-cita">
@@ -116,12 +130,14 @@
             </div>
     </div>
 
+    <!-- aqui cerras dos veces section, pero no hay ninguna seccion abierta! ojo -->
     </section>
     </section>
     <!---### Comienzo seccion proyectos botones###-->
     </section>
     <section class="seccion-proyecto" id=proyecto>
-
+<!-- Mis proyectos y Mis conocimientos tienen la misma jerarquia (encabezan secciones),
+por lo que ambos deberian ser h2 -->
         <h3 class="seccion-titulo">Mis proyectos</h3>
         <div class="proyectos-botones">
             <button type="button" class="proyecto-botones-seleccionado">Todos</button>
