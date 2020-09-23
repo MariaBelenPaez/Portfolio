@@ -7,14 +7,14 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/construct.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -23,19 +23,45 @@
 
 </head>
 
+
 <body>
+
     <!---### Comienzo Header###-->
+    <aside>
+        <div class="container">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <menu class="navbar">
+                <ul>
+                    <li><a href="#"><b>Hola</b></a></li>
+                    <li><a href="#"><b>Conocimientos</b></a></li>
+                    <li><a href="#"><b>Proyectos</b></a></li>
+                    <li><a href="#"><b>Contacto</b></a></li>
+                </ul>
+            </menu>
+        </div>
+    </aside>
     <header>
-        <nav>
-            <!---### Barra Nav/Menu Hamburguesa###-->
-            <ul class="barra">
-                <div class="menu-hamburguesa"> <i class="fas fa-bars"></i></div>
-                <li><a href="#">Hola</a></li>
-                <li><a href="#">Conocimientos</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#" class="contacto">Contactos</a></li>
-            </ul>
-        </nav>
+        <!---### Barra Nav/Menu Hamburguesa###-->
+
+        <div class="contenedor-menu">
+            <nav>
+                <ul class="barra">
+
+                    <li><a href="#boton-menu">Hola</a></li>
+                    <li><a href="#boton-menu">Conocimientos</a></li>
+                    <li><a href="#boton-menu">Proyectos</a></li>
+                    <li><a href="#boton-menu" class="contacto">Contacto</a></li>
+
+                </ul>
+            </nav>
+
+
+
+
     </header>
 
 
@@ -44,21 +70,21 @@
         <div class="saludo">
             <div class="saludo-cartel">
                 <p class="hola"> Hola! Soy</p>
-                <h1> María Belén</h1>
-                <p class="sobre-mi">Desarrolladora,me gusta la fotografía y los videojuegos</p>
+                <h1> María Belén Paez</h1>
+                <p class="sobre-mi">Desarrolladora,me gusta la fotografía, el cine y los animales</p>
+            </div>
+            <!---### Boton presentacion###-->
+            <div class="middle">
+                <a href="#" class="myButton">Lo que hago</a>
             </div>
 
         </div>
         <!---### Imagen presentacion###-->
         <div class="imagen.chica">
-            <img src="imagenes/monocromo.gif" alt="gif">
+            <img src="imagenes/rojo.jpg" alt="imagen-principal">
         </div>
-        <!---### Boton presentacion###-->
-        <div class="middle">
-            <a href="" class="btn btn1">Lo que hago</a>
-        </div>
-        <!---### Botón alternativo media query###-->
-        <button class="nuevo-boton">Lo que hago</button>
+
+
     </section>
 
 
@@ -222,7 +248,7 @@
 
 
 
-
+    <script src="index.js"></script>
 </body>
 
 </html>

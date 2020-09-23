@@ -1,399 +1,581 @@
- /**generales**/
- 
- html {
-     scroll-behavior: smooth;
- }
- 
- * {
-     margin: 0px;
- }
- 
- body {
-     background-color: whitesmoke;
- }
- 
- img {
-     width: 100%;
-     height: auto;
- }
- /**Header**/
- 
- header {
-     background-color: #f0efeb;
-     display: flex;
-     justify-content: flex-end;
- }
- /**Navegador**/
- 
- nav {
-     color: grey;
-     font-size: 25px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     height: 80px;
-     margin-top: 15px;
-     box-shadow: 1px 2px 5px -3px #aaa;
- }
- 
- ul {
-     flex-direction: row;
-     justify-content: flex-start;
-     margin-right: 150px;
-     padding: 4%;
- }
- 
- li a {
-     margin-right: 20px;
-     color: inherit;
-     text-decoration: none;
- }
- 
- .barra {
-     width: 100%;
-     display: flex;
-     flex-wrap: wrap;
-     list-style-type: none;
- }
- /**Botón seleccionado barra nav y botón alternativo 
- para mediaquery en la seccion de presentación **/
- 
- .contacto,
- .nuevo-boton {
-     background-color: black;
-     color: blanchedalmond;
-     border-radius: 100px;
-     padding: 0 30 px;
-     font-family: monospace;
-     font-size: 20px;
-     height: 50px;
- }
- 
- .contacto:hover,
- .nuevo-boton:hover {
-     background-position: 0 100%;
- }
- /**Presentacion*/
- 
- .saludo-cartel {
-     margin-top: 50px;
- }
- 
- .seccion-imagen {
-     background-color: #333533;
-     color: #8a817c;
-     display: flex;
-     font-family: 'Quantico', sans-serif;
-     font-size: 35px;
-     text-align: center;
- }
- 
- h1 {
-     font-size: 50px;
-     font-family: 'Quantico', sans-serif;
- }
- 
- .sobre-mi {
-     font-family: 'Courier New', Courier, monospace;
-     font-size: 25px;
-     margin-left: 10px;
-     margin-top: 5px;
- }
- /**Boton Lo que hago*/
- 
- .middle {
-     position: absolute;
-     top: 70%;
-     right: 50%;
-     transform: translate(-50%, -50%);
- }
- 
- .btn {
-     position: relative;
-     color: blanchedalmond;
-     font-size: 14px;
-     font-family: "montserrat";
-     text-decoration: none;
-     margin: 30px 0;
-     margin-top: 100px;
-     border: 2px solid black;
-     padding: 14px 60px;
-     text-transform: uppercase;
-     overflow: hidden;
-     transition: 1s all ease;
- }
- 
- .btn::before {
-     background: black;
-     content: "";
-     position: absolute;
-     top: 40%;
-     left: 65%;
-     transform: translate(-50%, -50%);
-     z-index: -1;
-     transition: all 0.6s ease;
- }
- 
- .btn1::before {
-     width: 0%;
-     height: 100%;
- }
- 
- .btn1:hover::before {
-     width: 100%;
- }
- /**Botón alternativo para mediaquery*/
- 
- .nuevo-boton {
-     display: none;
- }
- /**Seccion skills*/
- 
- .contenedor {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-color: #ede7e3;
-     text-align: center;
-     font-size: 17px;
-     font-family: 'Roboto Mono', monospace;
-     ;
-     margin-top: 10%;
- }
- 
- h2 {
-     font-family: 'Quantico', sans-serif;
-     font-size: 55px;
-     padding-bottom: 0px;
-     text-align: center;
- }
- 
- .contenido {
-     font-size: 30px;
-     font-family: 'Quantico', sans-serif;
-     padding: 40px 20px;
-     width: 300px;
-     margin: 10px;
-     background-color: #e8d9d9;
-     border: 1px solid #ccc5b9;
-     border-radius: 15%;
- }
- 
- .parrafo-contenido {
-     font-size: 20px;
- }
- 
- .cajitas {
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     border-radius: 10%;
-     margin-top: 50px;
-     margin-right: 40px;
- }
- 
- .contenido i {
-     font-size: 75px;
-     height: 50px;
-     width: 25px;
- }
- /**Seccion frase*/
- 
- .main-cita {
-     background-color: #9d0208;
-     margin-top: 50px;
-     margin-bottom: 70px;
- }
- 
- .cita {
-     background-size: cover;
-     background-position: center;
-     padding-top: 100px;
-     padding-bottom: 100px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
- }
- 
- .contenedor-cita {
-     background-color: #bcb8b1;
-     padding: 2%;
-     border-radius: 15%;
- }
- 
- .quote {
-     font-size: 25px;
-     text-align: center;
-     font-weight: 200;
-     font-family: monospace;
-     color: black;
- }
- 
- .autor {
-     font-size: 35px;
-     font-weight: 400;
-     text-align: end;
-     padding-top: 2%;
- }
- /**Botones Proyectos*/
- 
- button {
-     line-height: 2.5;
-     margin: 0 20px 30px;
-     padding: 0 30px;
-     border: 0;
-     background-color: transparent;
-     font-size: 1em;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: #2e2e31;
- }
- 
- .proyectos-botones {
-     display: flex;
-     justify-content: center;
-     margin-top: 50px;
- }
- 
- .proyecto-botones-seleccionado {
-     background-color: #b56576;
-     border-radius: 10%;
- }
- 
- .proyecto-botones {
-     flex-wrap: wrap;
- }
- /**Cajas proyectos*/
- 
- h3 {
-     font-family: 'Quantico', sans-serif;
-     font-size: 65px;
-     padding-bottom: 0px;
-     text-align: center;
- }
- 
- .contenidos {
-     font-size: 20px;
-     font-family: 'Quantico', sans-serif;
-     padding: 40px 50px;
-     text-align: center;
-     width: 550px;
-     margin: 10px;
-     background-color: #dedbd2;
-     border: 1px solid #ccc5b9;
-     border-radius: 15%;
-     border: 1px solid rgb(196, 194, 194);
- }
- 
- .contenidos i {
-     font-size: 100px;
-     height: 75px;
-     width: 25px;
- }
- 
- .proyecto-cuadros {
-     margin-left: 20px;
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     font-size: 350px;
-     text-align: center;
-     padding: 10%;
- }
- 
- .contenidos {
-     max-width: 200px;
- }
- /**Seccion Footer*/
- 
- footer {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     font-family: 'Quantico', sans-serif;
-     padding: 50px 20px 60px;
-     background-color: #723d46;
-     color: white;
-     margin-top: 5%;
- }
- 
- .footer-nav-menu {
-     display: flex;
-     margin: 0;
-     font-family: 'Quantico', sans-serif;
- }
- 
- .footer-nav-item {
-     margin: 0 10px;
- }
- 
- .footer-nav-link {
-     display: flex;
-     font-size: 25px;
-     color: white;
- }
- 
- .footer-links-redes {
-     display: flex;
-     font-size: 40px;
-     list-style: none;
- }
- 
- .footer-item-redes {
-     font-size: 45px;
-     display: flex;
-     text-align: center;
-     margin-left: 30px;
-     padding-left: 5%;
-     margin-bottom: 30px;
- }
- 
- .menu-hamburguesa {
-     display: none;
- }
- /* Responsive */
- 
- @media (max-width: 1030px) {
-     .middle {
-         display: none;
-     }
-     .nuevo-boton {
-         display: block;
-     }
-     .seccion-imagen {
-         flex-direction: column;
-     }
- }
- 
- @media (max-width:700px) {
-     .menu-hamburguesa {
-         display: block;
-     }
-     li {
-         display: none;
-     }
-     .sobre-mi {
-         font-size: 20px;
-     }
-     .contenedor {
-         flex-direction: column;
-         justify-content: space-between;
-         margin-left: 80px;
-     }
-     .main-cita {
-         margin-left: 50px;
-         margin-left: 40px;
-     }
-     .footer-nav-menu {
-         flex-direction: column;
-         justify-content: space-between;
-     }
-     .footer-nav-item {
-         font-size: 10px;
-     }
-     .footer-item-redes {
-         font-size: 17px;
-     }
-     .proyecto-botones {
-         margin: 0 8px 30px;
-         padding: 0 10px
-     }
- }
+/**generales**/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    position: relative;
+}
+
+body {
+    background: #B51F0E;
+    background: -webkit-linear-gradient(top left, #B51F0E, #623C69);
+    background: -moz-linear-gradient(top left, #B51F0E, #623C69);
+    background: linear-gradient(to bottom right, #B51F0E, #623C69);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/**Menu responsive*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
+.navbar {
+    background-color: #d62828;
+    width: 20%;
+    display: none;
+}
+
+.navbar ul {
+    overflow: hidden;
+    list-style-type: none;
+    padding-top: 50%;
+    margin: 0;
+}
+
+.navbar li {
+    display: block;
+    margin: 0;
+    padding: 5% 50px;
+    width: 100%;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+}
+
+.navbar li a {
+    color: #d3e3e3;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+    background-color: #ffadad;
+}
+
+.hamburger {
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    transition: opacity .3s;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+    opacity: .5;
+    color: whitesmoke;
+}
+
+.hamburger .line {
+    width: 50px;
+    height: 5px;
+    background: rgb(236, 66, 66);
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.hamburger .line:nth-child(1) {
+    background-color: #EFFFC8;
+}
+
+.hamburger .line:nth-child(2) {
+    background-color: #633200;
+}
+
+.hamburger .line:nth-child(3) {
+    background-color: #a77a33;
+}
+
+.hamburger.isactive .line:nth-child(2) {
+    color: wheat;
+    opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.navbar {
+    transition: all 4s ease-in-out;
+}
+
+.navbar.active {
+    display: block;
+    animation: fade .5s;
+}
+
+@keyframes fade {
+    from {
+        transform: translateX(-200px);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .navbar {
+        width: 30%;
+    }
+    .navbar ul {
+        padding-left: 0%;
+    }
+    .navbar li {
+        padding: 3% 0;
+    }
+    .navbar li a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        background-color: #333;
+        width: 100%;
+        height: 45vh;
+        display: none;
+    }
+    .navbar ul {
+        overflow: hidden;
+        list-style-type: none;
+        padding-top: 3%;
+        padding-left: 30%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        margin: 0;
+    }
+    .navbar li {
+        display: block;
+        margin: 0;
+        padding: 14px 20px;
+        width: 100%;
+        transition: background-color .5s;
+    }
+    .navbar li:hover {
+        cursor: pointer;
+        background-color: #ce3939;
+    }
+    .navbar li a {
+        color: #d3e3e3;
+        text-decoration: none;
+        padding: 14px 16px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        transition: all 1s;
+    }
+    .navbar li:hover {
+        cursor: pointer;
+        background-color: #A5CBC3;
+    }
+}
+
+
+/**Header**/
+
+header {
+    background-color: #CD5C5C;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/**Navegador**/
+
+nav {
+    color: #F5D3D3;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 80px;
+    margin-top: 15px;
+    box-shadow: 1px 2px 5px -3px #aaa;
+}
+
+ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 150px;
+    padding: 4%;
+}
+
+li a {
+    margin-right: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.barra {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.menu-responsive {
+    margin: 0%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/**Presentacion*/
+
+.saludo-cartel {
+    margin-top: 50px;
+}
+
+.seccion-imagen {
+    background-color: rgb(237, 73, 73);
+    color: #F5D3D3;
+    display: flex;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.sobre-mi {
+    font-family: 'BenchNine', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+/**Boton Lo que hago*/
+
+.myButton {
+    box-shadow: 0px 10px 14px -7px #d4552f;
+    background: linear-gradient(to bottom, #520a16 5%, #ed1313 100%);
+    background-color: #520a16;
+    border-radius: 10px;
+    border: 2px solid #1a0606;
+    display: inline-block;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: 'BenchNine', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #c21515;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #ed1313 5%, #520a16 100%);
+    background-color: #ed1313;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/**Botón alternativo para mediaquery*/
+
+.nuevo-boton {
+    display: none;
+}
+
+
+/**Seccion skills*/
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF8585;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'BenchNine', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    ;
+    margin-top: 10%;
+}
+
+h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 55px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.contenido {
+    font-size: 30px;
+    font-family: 'Quantico', sans-serif;
+    padding: 40px 20px;
+    width: 300px;
+    margin: 10px;
+    background-color: #DF8F8F;
+    border: 1px solid #ccc5b9;
+    border-radius: 15%;
+}
+
+.parrafo-contenido {
+    font-size: 20px;
+}
+
+.cajitas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.contenido i {
+    font-size: 75px;
+    height: 50px;
+    width: 25px;
+}
+
+
+/**Seccion frase*/
+
+.main-cita {
+    background-color: #9d0208;
+}
+
+.cita {
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+}
+
+.contenedor-cita {
+    background-color: #bcb8b1;
+    padding: 2%;
+    border-radius: 15%;
+}
+
+.quote {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    font-family: monospace;
+    color: black;
+}
+
+.autor {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: end;
+    padding-top: 2%;
+}
+
+
+/**Botones Proyectos*/
+
+button {
+    line-height: 2.5;
+    margin: 0 20px 30px;
+    padding: 0 30px;
+    border: 0;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.proyectos-botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.proyecto-botones-seleccionado {
+    background-color: #b56576;
+    border-radius: 10%;
+}
+
+.proyecto-botones {
+    flex-wrap: wrap;
+}
+
+
+/**Cajas proyectos*/
+
+h3 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #F6DCDC;
+    font-size: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.contenidos {
+    font-size: 20px;
+    font-family: monospace;
+    padding: 40px 50px;
+    text-align: center;
+    width: 550px;
+    margin: 10px;
+    background-color: #dedbd2;
+    border: 1px solid #ccc5b9;
+    border-radius: 15%;
+    border: 1px solid rgb(196, 194, 194);
+}
+
+.contenidos i {
+    font-size: 100px;
+    height: 75px;
+    width: 25px;
+}
+
+.proyecto-cuadros {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 350px;
+    text-align: center;
+    padding: 10%;
+}
+
+.contenidos {
+    max-width: 200px;
+}
+
+
+/**Seccion Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 50px 20px 60px;
+    background-color: #723d46;
+    color: white;
+    margin-top: 5%;
+}
+
+.footer-nav-menu {
+    display: flex;
+    margin: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.footer-nav-item {
+    margin: 0 10px;
+}
+
+.footer-nav-link {
+    display: flex;
+    font-size: 25px;
+    color: white;
+}
+
+.footer-links-redes {
+    display: flex;
+    font-size: 40px;
+    list-style: none;
+}
+
+.footer-item-redes {
+    font-size: 45px;
+    display: flex;
+    text-align: center;
+    margin-left: 30px;
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1030px) {
+    .seccion-imagen {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+    .contenedor-menu {
+        display: none;
+    }
+    .sobre-mi {
+        font-size: 20px;
+    }
+    .contenedor {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 80px;
+    }
+    .main-cita {
+        font-size: 15px;
+    }
+    .contenedor-cita {
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer-nav-menu {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer-nav-item {
+        font-size: 10px;
+    }
+    .footer-item-redes {
+        font-size: 17px;
+    }
+    .proyecto-botones {
+        margin: 0 8px 30px;
+        padding: 0 10px
+    }
+    h1,
+    h2,
+    h3 {
+        font-size: 30px;
+    }
+    .main-cita {
+        font-size: 15px;
+    }
+    .contenedor-cita {
+        text-align: center;
+        flex-direction: column;
+    }
+}
