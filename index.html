@@ -28,7 +28,7 @@
 
     <!---### Comienzo Header###-->
     <aside>
-        <div class="container">
+        <div class="container hidden">
             <div class="hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -36,10 +36,10 @@
             </div>
             <menu class="navbar">
                 <ul>
-                    <li><a href="#"><b>Hola</b></a></li>
-                    <li><a href="#"><b>Conocimientos</b></a></li>
-                    <li><a href="#"><b>Proyectos</b></a></li>
-                    <li><a href="#"><b>Contacto</b></a></li>
+                    <li><a href="#saludos"><b>Hola</b></a></li>
+                    <li><a href="#conocimientos"><b>Conocimientos</b></a></li>
+                    <li><a href="#proyecto"><b>Proyectos</b></a></li>
+                    <li><a href="mailto:belenpaez@live.com.ar"><b>Contacto</b></a></li>
                 </ul>
             </menu>
         </div>
@@ -47,14 +47,14 @@
     <header>
         <!---### Barra Nav/Menu Hamburguesa###-->
 
-        <div class="contenedor-menu">
+        <div class="contenedor-menu" id="hola">
             <nav>
                 <ul class="barra">
 
-                    <li><a href="#boton-menu">Hola</a></li>
-                    <li><a href="#boton-menu">Conocimientos</a></li>
-                    <li><a href="#boton-menu">Proyectos</a></li>
-                    <li><a href="#boton-menu" class="contacto">Contacto</a></li>
+                    <li><a href="#saludos">Hola</a></li>
+                    <li><a href="#conocimientos">Conocimientos</a></li>
+                    <li><a href="#proyecto">Proyectos</a></li>
+                    <li><a href="mailto:belenpaez@live.com.ar" class="contacto">Contacto</a></li>
 
                 </ul>
             </nav>
@@ -67,7 +67,7 @@
 
     <!---### Comienzo presentacion###-->
     <section class="seccion-imagen">
-        <div class="saludo">
+        <div class="saludo" id="saludos">
             <div class="saludo-cartel">
                 <p class="hola"> Hola! Soy</p>
                 <h1> María Belén Paez</h1>
@@ -75,7 +75,7 @@
             </div>
             <!---### Boton presentacion###-->
             <div class="middle">
-                <a href="#" class="myButton">Lo que hago</a>
+                <a href="#proyecto" class="myButton">Lo que hago</a>
             </div>
 
         </div>
@@ -89,43 +89,43 @@
 
 
     <!---### Comienzo Cajas conocimientos###-->
-    <div class="contenedor">
-        <h2> Mis conocimientos
-        </h2>
-        <p class="descripcion"> Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Alias dignissimos repellendus
-        </p>
-        <!---### Cajas conocimientos###-->
-        <div class="cajitas">
-            <div class="contenido">
-                <i class="devicon-git-plain colored"></i>
-                <p class="parrafo.contenido"> Git</p>
-            </div>
-            <div class="contenido">
-                <i class="devicon-react-original colored"></i>
-                <p class="parrafo.contenido"> React</p>
+    <div class="contenedor" id="conocimientos"></div>>
+    <h2> Mis conocimientos
+    </h2>
+    <p class="descripcion"> Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos repellendus </p>
 
-            </div>
-            <div class="contenido">
-                <i class="devicon-html5-plain-wordmark colored"></i>
-                <p class="parrafo.contenido"> HTML 5</p>
-            </div>
-
-            <div class="contenido">
-                <i class="devicon-javascript-plain colored"></i>
-                <p class="parrafo.contenido"> Javascript</p>
-
-            </div>
-            <div class="contenido">
-                <i class="devicon-sass-original colored"></i>
-                <p class="parrafo.contenido"> Sass</p>
-
-            </div>
-            <div class="contenido">
-                <i class="devicon-css3-plain-wordmark colored"></i>
-                <p class="parrafo.contenido">Css 3</p>
-
-            </div>
+    <!---### Cajas conocimientos###-->
+    <div class="cajitas">
+        <div class="contenido">
+            <i class="devicon-git-plain colored"></i>
+            <p class="parrafo.contenido"> Git</p>
         </div>
+        <div class="contenido">
+            <i class="devicon-react-original colored"></i>
+            <p class="parrafo.contenido"> React</p>
+
+        </div>
+        <div class="contenido">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <p class="parrafo.contenido"> HTML 5</p>
+        </div>
+
+        <div class="contenido">
+            <i class="devicon-javascript-plain colored"></i>
+            <p class="parrafo.contenido"> Javascript</p>
+
+        </div>
+        <div class="contenido">
+            <i class="devicon-sass-original colored"></i>
+            <p class="parrafo.contenido"> Sass</p>
+
+        </div>
+        <div class="contenido">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <p class="parrafo.contenido">Css 3</p>
+
+        </div>
+    </div>
     </div>
 
     <!---### Seccion Frase###-->
@@ -204,37 +204,37 @@
         <nav class="footer-nav ">
             <ul class="footer-nav-menu ">
                 <li class="footer-nav-item">
-                    <a href="#sobre " class="footer-nav-link ">HOLA</a>
+                    <a href="#saludos " class="footer-nav-link ">HOLA</a>
                 </li>
                 <li class="footer-nav-item ">
-                    <a href="#conocimiento " class="footer-nav-link ">CONOCIMIENTOS</a>
+                    <a href="#conocimientos" class="footer-nav-link ">CONOCIMIENTOS</a>
                 </li>
                 <li class="footer-nav-item ">
                     <a href="#proyecto " class="footer-nav-link ">PROYECTOS</a>
                 </li>
                 <li class="footer-nav-item ">
-                    <a href="#contactos " class="footer-nav-link ">CONTACTO</a>
+                    <a href="mailto:belenpaez@live.com.ar " class="footer-nav-link ">CONTACTO</a>
                 </li>
             </ul>
         </nav>
         <!---### Iconos redes sociales###-->
-        <ul class="footer-links-redes ">
+        <ul class="footer-item-redes ">
             <li class="footer-item-redes ">
-                <a href=" " class="icono-redes "></a>
-                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com" class="icono-redes ">
+                    <i class="fab fa-twitter"></i></a>
             </li>
             <li class="footer-item-redes ">
-                <a href=" " class="icono-redes ">
+                <a href="https://github.com/MariaBelenPaez " class="icono-redes ">
                     <i class="fab fa-github-alt"></i>
                 </a>
             </li>
             <li class="footer-item-redes ">
-                <a href=" " class="icono-redes ">
+                <a href="https://ar.linkedin.com/ " class="icono-redes ">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </li>
             <li class="footer-item-redes ">
-                <a href=" " class="icono-redes">
+                <a href="mailto:belenpaez@live.com.ar " class="icono-redes">
                     <i class="far fa-envelope"></i>
                 </a>
             </li>

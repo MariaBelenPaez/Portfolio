@@ -247,7 +247,7 @@ li a {
 /**Presentacion*/
 
 .saludo-cartel {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .seccion-imagen {
@@ -317,19 +317,18 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FF8585;
     text-align: center;
     font-size: 17px;
     font-family: 'BenchNine', sans-serif;
     font-family: 'Pathway Gothic One', sans-serif;
     ;
-    margin-top: 10%;
 }
 
 h2 {
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 55px;
-    padding-bottom: 0px;
+    color: whitesmoke;
+    font-size: 30px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -353,14 +352,23 @@ h2 {
     justify-content: space-between;
     flex-wrap: wrap;
     border-radius: 10%;
-    margin-top: 50px;
     margin-right: 40px;
 }
 
 .contenido i {
-    font-size: 75px;
+    font-size: 30px;
     height: 50px;
     width: 25px;
+}
+
+.descripcion {
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+p.descripcion {
+    font-size: 10px;
+    color: whitesmoke;
 }
 
 
@@ -579,3 +587,10 @@ footer {
         flex-direction: column;
     }
 }
+
+
+/*//Menú celulares barra de navegación
+
+#ul-header {
+        display: none;
+    }
